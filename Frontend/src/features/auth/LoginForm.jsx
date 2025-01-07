@@ -14,7 +14,7 @@ const LoginForm = () => {
   const navigate = useNavigate();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
-
+axios.defaults.withCredentials = true;
   const {
     register,
     handleSubmit,
