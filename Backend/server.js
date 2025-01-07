@@ -16,7 +16,7 @@ connectDB();
 // Middleware
 app.use(express.json());
 app.use(cookieParser());
-app.use(cors({ origin: 'https://binzaniportal-frontnend.vercel.app', credentials: true }));
+app.use(cors({ origin: 'https://binzaniportal-frontnend.vercel.app/api', credentials: true }));
 
 // Use routes
 app.use("/api/auth", authRoutes); // Fixed: Added leading slash
