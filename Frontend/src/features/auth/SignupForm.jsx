@@ -20,6 +20,7 @@ const SignupSchema = z.object({
 const SignupForm = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [serverError, setServerError] = useState("");
+  axios.defaults.withCredentials = true;
   const navigate = useNavigate();
 
   const {
