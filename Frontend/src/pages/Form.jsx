@@ -48,7 +48,7 @@ const Form = () => {
       formData.append("placeOfBirth", data.placeOfBirth);
       formData.append("photo", data.photo[0]);
 
-      await axios.post("http://localhost:3000/api/students", formData, {
+      await axios.post("https://binzaniportal-api.vercel.app/api/students", formData, {
         headers: { "Content-Type": "multipart/form-data" },
       });
 
