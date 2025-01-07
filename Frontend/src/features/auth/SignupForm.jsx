@@ -36,7 +36,7 @@ const SignupForm = () => {
     setServerError("");
     try {
       const response = await axios.post(
-        "http://localhost:3000/api/auth/signup",
+        "https://binzaniportal-api.vercel.app/api/auth/signup",
         data,
         {
           withCredentials: true,
